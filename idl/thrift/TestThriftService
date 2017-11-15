@@ -1,0 +1,32 @@
+namespace java com.sankuai.provide
+
+service HelloProvide{
+ string helloString(1:string param);
+ i32 helloInteger(1:i32 param1,2:i64 param2);
+ bool helloBool(1:bool param);
+ void sysHello();
+}
+
+/*   定义类 */
+struct Person{
+1:i32 id,
+2:string name,
+3:list<string> hobby
+}
+
+/* 定义枚举类型*/
+enum ParseInt{
+ONE =1,
+TWO =2,
+Three,
+FORE =4
+}
+
+/*定义类型别名*/
+typedef string String;
+typedef i32  Integer;
+
+struct Demo{
+1:Integer id,
+2:String name
+}
